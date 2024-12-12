@@ -1,0 +1,197 @@
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color:black;
+}
+
+.modal-content {
+ 
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  color:black;
+}
+
+.payment-methods button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.payment-methods img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.process-payment {
+  background-color: #ff5757;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-success {
+  background-color: #28a745;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.audio-player-side {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.audio-player {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.thank-you-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+
+
+
+.listen-btn, .buy-btn {
+  padding: 10px;
+  background-color: #ff5757;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.listen-btn:disabled {
+  background-color: #ccc;
+}
+
+.buy-btn {
+  background-color: #007bff;
+}
+.payment-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+ 
+}
+
+.payment-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  gap:20px;
+  width: 550px;
+  text-align: center;
+}
+
+.payment-modal h3 {
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.payment-methods button {
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  align-items: center;
+  
+  gap: 20px;
+  display: block;
+}
+
+.thank-you-message {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+audio {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  color: white;
+  padding: 5px;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #000000;
+  color: white;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: #ff5757;
+}
+.audiobooks-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:30px;
+}
+.audiobook-card{
+  width:250px;
+  height: 430px;
+  border: 1px solid black;
+  border-radius: 8px;
+
+}

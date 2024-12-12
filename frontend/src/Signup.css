@@ -1,0 +1,82 @@
+
+.signup-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+}
+
+/* Background video styling */
+.background-video {
+  background-image: url("https://videos.pexels.com/video-files/855570/855570-hd_1920_1080_25fps.mp4");
+  position: absolute; /* Fixed to cover entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes video cover the whole viewport */
+  z-index: -1; /* Behind all content */
+}
+
+/* Form container */
+.signup-form-container {
+  position: relative;
+  z-index: 1; /* Above the video */
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Input container styling */
+.input-container {
+  margin: 20px 0;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #d94646;
+}
+
+/* Extra form info styling */
+.form-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-info img {
+  margin-top: 10px;
+  width: 100px;
+  height: auto;
+}

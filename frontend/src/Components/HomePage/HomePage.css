@@ -1,0 +1,269 @@
+/* General Styling */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100vh;
+  z-index:-1;
+  object-fit: cover;
+  pointer-events: auto; 
+  
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-title,
+.hero-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Parallax Effect */
+[data-parallax-text] {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.hero-section:hover [data-parallax-text] {
+  transform: translateY(-20px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-title,
+.hero-subtitle,
+.why-text,
+.advantages h3,
+.testimonials-section h2,
+.cta-content h2 {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.advantages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  max-width: 300px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+}
+
+.cta-button {
+  background-color: #ff5757;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ff2e2e;
+}
+
+
+/* CTA Section */
+.cta-section {
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  color: white;
+ 
+}
+
+.cta-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.cta-button {
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #d44444;
+}
+/* Benefits Section */
+.why-creepycast {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+.why-creepycast h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff5757;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.advantage-item {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.advantage-item h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #ff5757;
+}
+
+.advantage-item p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #ff5757;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background: #0e0e0e;
+  color: white;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff5757;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.testimonial-slide p {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.testimonial-slide h4 {
+  font-size: 1rem;
+  color: #ff5757;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}

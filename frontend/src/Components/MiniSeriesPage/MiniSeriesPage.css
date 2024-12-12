@@ -1,0 +1,80 @@
+.mini-series-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .filters h2 {
+    margin-bottom: 10px;
+    color: #ff5757;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-options select,
+  .filter-options input {
+    padding: 8px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .mini-series-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .mini-series-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .mini-series-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .mini-series-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .mini-series-info h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .mini-series-info p {
+    margin: 5px 0;
+  }
+  
+  .mini-series-info button {
+    padding: 10px 15px;
+    background-color: #ff5757;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mini-series-info button:hover {
+    background-color: #ff8585;
+  }
+  

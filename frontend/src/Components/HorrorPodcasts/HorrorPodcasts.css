@@ -1,0 +1,108 @@
+.horror-podcasts {
+
+    color: #ffffff;
+
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filters input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    background: #1e1e1e;
+    border: none;
+    color: #fff;
+  }
+  
+  .filters select {
+    padding: 10px;
+    background: #1e1e1e;
+    border: none;
+    color: #fff;
+  }
+  
+  .podcast-list {
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    margin-left:150px;
+  }
+  
+  .podcast-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .podcast-card:hover {
+    transform: scale(1.05);
+    background: #ff5757;
+  }
+  
+  .podcast-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .podcast-info {
+    margin-top: 10px;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #ff5757;
+  }
+  
+  .audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 20px;
+    border-top: 2px solid #ff5757;
+    text-align: center;
+  }
+  
+  .audio-player h2 {
+    margin-bottom: 10px;
+  }
+  
+  .audio-player audio {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .audio-player p {
+    margin-top: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5757;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background: #ff0000;
+  }
+  

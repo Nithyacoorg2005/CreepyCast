@@ -1,0 +1,89 @@
+body {
+
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modern-movie-page {
+    padding: 20px;
+  }
+  
+  .movie-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .movie-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .movie-header input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .movie-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 10px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 315px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

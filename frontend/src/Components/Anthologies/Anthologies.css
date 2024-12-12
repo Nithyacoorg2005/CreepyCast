@@ -1,0 +1,101 @@
+.anthologies-page {
+    
+    color: #ffffff;
+    padding: 20px;
+    
+  }
+  
+  .filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .filters label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .filters select {
+    margin-top: 5px;
+    padding: 5px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .anthology-list {
+    margin-top:50px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 30px;
+   margin-left:150px;
+   margin-right:150px;
+  }
+  
+  .anthology-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .anthology-card:hover {
+    transform: scale(1.05);
+    background: #ff5757;
+  }
+  
+  .anthology-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ff5757;
+  }
+  
+  .video-player-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  video {
+    border: 2px solid #ff5757;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff5757;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .close-button:hover {
+    background: #ff3030;
+  }
+  
