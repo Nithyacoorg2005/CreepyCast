@@ -1,1 +1,16 @@
-node_modules/
+# 1. Add node_modules to .gitignore
+echo "node_modules/" >> .gitignore
+
+# 2. Remove cached node_modules
+git rm -r --cached backend/node_modules
+
+# 3. Add files and commit
+git add .
+git commit -m "Fix: Ignore node_modules directory"
+
+# 4. Update remote origin
+git remote set-url origin https://github.com/Nithyacoorg2005/CreepyCast.git
+
+# 5. Push to main branch
+git push -u origin main
+
