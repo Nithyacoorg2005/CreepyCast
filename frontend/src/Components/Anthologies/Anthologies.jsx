@@ -20,7 +20,7 @@ const Anthologies = () => {
       language: "English",
       rating: 4.8,
       description: "A stray cat is the linking element of three tales of suspense and horror.",
-      image: "https://m.media-amazon.com/images/M/MV5BNmJkY2Q0ZjktNDA2YS00NGEwLThlZTEtZDllZWQ1ZmQ1ZWIxXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_FMjpg_UX800_.jpg", // Replace with actual image URL
+      image: "https://m.media-amazon.com/images/M/MV5BNmJkY2Q0ZjktNDA2YS00NGEwLThlZTEtZDllZWQ1ZmQ1ZWIxXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_FMjpg_UX800_.jpg", 
       videoUrl: "https://www.youtube.com/embed/fHv3qdIwpys",
     },
     {
@@ -31,7 +31,7 @@ const Anthologies = () => {
       language: "Spanish",
       rating: 4.5,
       description: "Guests at an English estate recall nightmares.",
-      image: "https://th.bing.com/th/id/OIP.ptX_vrE9KQlfnb7e-ejdvAHaK-?rs=1&pid=ImgDetMain", // Replace with actual image URL
+      image: "https://th.bing.com/th/id/OIP.ptX_vrE9KQlfnb7e-ejdvAHaK-?rs=1&pid=ImgDetMain", 
       videoUrl: "https://www.youtube.com/embed/q3esGD6lcMM",
     },
     {
@@ -90,7 +90,7 @@ const Anthologies = () => {
       videoUrl: "https://www.youtube.com/embed/6m5XwND5zX4",
     },
     
-    // Add more anthology data here...
+
   ];
 
   const handleFilterChange = (filterName, value) => {
