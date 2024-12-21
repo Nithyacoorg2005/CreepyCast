@@ -1,4 +1,4 @@
-// server.js
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -8,11 +8,11 @@ const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
-// Middleware
+
 app.use(cors());
 app.use(bodyParser.json());
 
-// Connect to MongoDB
+
 mongoose.connect('mongodb://localhost:27017/signupDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/signupDB', {
 }).then(() => console.log('MongoDB connected'))
   .catch(err => console.error(err));
 
-// Signup Route
+
 app.post('/signup', async (req, res) => {
     const { username, email, password } = req.body;
 
