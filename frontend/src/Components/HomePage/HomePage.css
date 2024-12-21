@@ -1,4 +1,4 @@
-/* General Styling */
+
 .hero-section {
   position: relative;
   height: 100vh;
@@ -43,7 +43,7 @@
   animation: fadeInUp 2s ease-in-out;
 }
 
-/* Parallax Effect */
+
 [data-parallax-text] {
   transform: translateY(0);
   transition: transform 0.5s ease-in-out;
@@ -54,7 +54,7 @@
   transform: translateY(-20px);
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -105,7 +105,7 @@
 }
 
 
-/* CTA Section */
+
 .cta-section {
   position: relative;
   height: 50vh;
@@ -144,7 +144,7 @@
 .cta-button:hover {
   background-color: #d44444;
 }
-/* Benefits Section */
+
 .why-creepycast {
   padding: 4rem 2rem;
   background-color: #121212;
@@ -198,7 +198,7 @@
   color: #ff5757;
 }
 
-/* Testimonials Section */
+
 .testimonials-section {
   padding: 4rem 2rem;
   background: #0e0e0e;
@@ -243,7 +243,7 @@
   font-weight: bold;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -255,7 +255,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .advantages {
     flex-direction: column;
