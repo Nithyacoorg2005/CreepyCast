@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer style={{marginTop:"100px"}} className="creepy-footer">
       <div className="footer-container">
-        {/* Logo and Tagline */}
+
         <div className="footer-logo">
           <h2>Creepy<span>Cast</span></h2>
           <p>Your ultimate destination for horror and thrill.</p>
         </div>
 
-        {/* Quick Links */}
+     
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
@@ -22,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+  
         <div className="footer-contact">
           <h3>Contact Us</h3>
           <p>📧 Email: <a href="mailto:support@creepycast.com">support@creepycast.com</a></p>
@@ -30,7 +30,7 @@ const Footer = () => {
           <p>📍 Address: 666 Horror Lane, Spookyville</p>
         </div>
 
-        {/* Social Media */}
+  
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
+     
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} CreepyCast. All Rights Reserved.</p>
         <p>🖤 Designed with scares and screams!</p>
