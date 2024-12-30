@@ -17,8 +17,8 @@ const HorrorPodcasts = () => {
       releaseDate: '2024-11-15',
       duration: '25:32',
       popularity: 5,
-      image: 'https://th.bing.com/th/id/OIP.5IfOfaRzalFR8Q0Aftr2WwHaEK?rs=1&pid=ImgDetMain', // Replace with real image URL
-      audioUrl: 'videos/horror-background-tension-254885.mp3', // Replace with actual audio URL
+      image: 'https://th.bing.com/th/id/OIP.5IfOfaRzalFR8Q0Aftr2WwHaEK?rs=1&pid=ImgDetMain', 
+      audioUrl: 'videos/horror-background-tension-254885.mp3', 
     },
     {
       id: 2,
@@ -98,7 +98,7 @@ const HorrorPodcasts = () => {
       audioUrl: 'videos/horror-background-tension-254885.mp3',
     },
     
-    // Add more podcast data here...
+
   ];
 
   const filteredPodcasts = podcastData
