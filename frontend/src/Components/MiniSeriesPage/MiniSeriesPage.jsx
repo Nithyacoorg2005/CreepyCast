@@ -28,7 +28,7 @@ const MiniSeriesPage = () => {
       thumbnail: "path-to-thumbnail.jpg",
       description: "An unsolved crime that unfolds with every episode. 🕵️",
     },
-    // Add more mini-series data
+  
   ];
 
   const filteredSeries = miniSeriesData
@@ -38,7 +38,7 @@ const MiniSeriesPage = () => {
       series.rating >= filters.minRating
     )
     .sort((a, b) => {
-      if (sortOption === "popularity") return b.rating - a.rating; // Example sort by rating as popularity
+      if (sortOption === "popularity") return b.rating - a.rating; 
       if (sortOption === "year") return b.year - a.year;
       return 0;
     });
