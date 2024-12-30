@@ -29,7 +29,7 @@ body {
     font-family: 'Creepster', cursive;
   }
   
-  /* Menu Styles */
+ 
   .navbar-menu {
     list-style: none;
     display: flex;
@@ -57,7 +57,7 @@ body {
     font-size: 1.5em;
   }
   
-  /* Subnavbar Styles */
+
   .subnavbar {
     position: absolute;
     top: 100%;
@@ -84,7 +84,7 @@ body {
     color: black;
   }
   
-  /* Animations */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
