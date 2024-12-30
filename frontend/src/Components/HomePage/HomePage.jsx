@@ -31,7 +31,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      {/* Hero Section */}
+    
       <section
         className="hero-section"
         style={{
@@ -54,7 +54,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Why CreepyCast Section */}
+    
       <section className="why-creepycast">
         <h2 style={{marginTop:"100px"}}>Why Choose CreepyCast?</h2>
         <div style={{marginTop:"100px"}} className="advantages">
@@ -86,7 +86,7 @@ const HomePage = () => {
         </p>
       </section>
 
-      {/* Testimonials Section */}
+     
       <section
         className="testimonials-section"
         style={{
