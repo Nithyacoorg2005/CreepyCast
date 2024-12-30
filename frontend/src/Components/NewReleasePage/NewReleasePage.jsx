@@ -139,7 +139,7 @@ const NewReleasePage = () => {
         ))}
       </div>
 
-      {/* Payment Modal */}
+     
       {showModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -168,7 +168,7 @@ const NewReleasePage = () => {
               </label>
             </div>
 
-            {/* UPI or Card Input */}
+      
             {paymentMethod === "upi" && (
               <div style={{ marginTop: "30px" }}>
                 <label>
@@ -222,7 +222,7 @@ const NewReleasePage = () => {
         </div>
       )}
 
-      {/* Thank You Modal */}
+    
       {showThankYouModal && (
         <div
           className="modal-overlay"
@@ -238,7 +238,7 @@ const NewReleasePage = () => {
         </div>
       )}
 
-      {/* Audio Player Modal */}
+      
       {showAudioPlayer && (
         <div className="modal-overlay" onClick={closeAudioModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
