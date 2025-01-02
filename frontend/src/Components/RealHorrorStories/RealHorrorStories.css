@@ -24,7 +24,7 @@
     margin-top: 10px;
   }
   
-  /* Stories List */
+
   .stories-list {
     display: flex;
     flex-direction: column;
@@ -67,7 +67,6 @@
     background-color: #e64a4a;
   }
   
-  /* Modal for Video Player */
   .modal {
     position: fixed;
     top: 0;
