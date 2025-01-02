@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./VideoPodcastsPage.css";
 
-// Sample Data
+
 const videoPodcasts = [
   {
     id: 1,
@@ -65,7 +65,7 @@ const videoPodcasts = [
     image:
       "https://i.ytimg.com/vi/I9aMMi4bYCU/maxres2.jpg?sqp=-oaymwEoCIAKENAF8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYfyBZKCQwDw==&rs=AOn4CLDa8af__sApLKMHEwkRaaHT_FCZRQ",
   },
-  // Add more podcasts here
+
 ];
 
 const VideoPodcastsPage = () => {
@@ -73,7 +73,7 @@ const VideoPodcastsPage = () => {
   const [selectedYear, setSelectedYear] = useState("");
   const [modalVideo, setModalVideo] = useState(null);
 
-  // Filters
+
   const filteredPodcasts = videoPodcasts.filter((podcast) => {
     return (
       (selectedLanguage ? podcast.language === selectedLanguage : true) &&
@@ -83,7 +83,7 @@ const VideoPodcastsPage = () => {
 
   return (
     <div style={{width:"1150px",marginLeft:"120px"}} className="video-podcasts-page">
-      {/* Filters */}
+    
       <div className="filters">
         <h2 style={{marginTop:"100px"}}>Video Podcasts</h2>
         <label style={{marginTop:"100px"}}>
@@ -104,7 +104,7 @@ const VideoPodcastsPage = () => {
         </label>
       </div>
 
-      {/* Podcast List */}
+
       <div className="podcast-list">
         {filteredPodcasts.map((podcast) => (
           <div key={podcast.id} className="podcast-card" onClick={() => setModalVideo(podcast)}>
@@ -116,7 +116,7 @@ const VideoPodcastsPage = () => {
         ))}
       </div>
 
-      {/* Video Modal */}
+
       {modalVideo && (
         <div className="modal">
           <div className="modal-content">
