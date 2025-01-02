@@ -6,8 +6,8 @@ const SeriesPage = () => {
   const [selectedSeason, setSelectedSeason] = useState(null);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const episodesRef = useRef(null); // Ref to scroll to episodes section
-  const videoRef = useRef(null); // Ref to scroll to video modal
+  const episodesRef = useRef(null); 
+  const videoRef = useRef(null); 
 
   const seriesData = [
     {
@@ -212,7 +212,7 @@ const SeriesPage = () => {
         </div>
       </div>
 
-      {/* Series List */}
+      
       <div style={{marginLeft:"150px",marginTop:"50px"}} className="series-list">
         {seriesData.map((series) => (
           <div key={series.id} className="series-card" onClick={() => handleSeriesClick(series)}>
@@ -227,7 +227,7 @@ const SeriesPage = () => {
         ))}
       </div>
 
-      {/* Series Details */}
+
       {selectedSeries && (
         <div className="series-details" ref={episodesRef}>
           <h2>{selectedSeries.title}</h2>
@@ -251,7 +251,7 @@ const SeriesPage = () => {
             ))}
           </select>
 
-          {/* Episodes List */}
+    
           {selectedSeason && (
             <div className="episodes-list">
               <h3>Episodes in Season {selectedSeason.seasonNumber}:</h3>
@@ -268,7 +268,7 @@ const SeriesPage = () => {
         </div>
       )}
 
-      {/* Modal for Video Playback */}
+   
       {isModalOpen && selectedEpisode && (
         <div className="modal" onClick={handleModalBackgroundClick} ref={videoRef}>
           <div className="modal-content">
