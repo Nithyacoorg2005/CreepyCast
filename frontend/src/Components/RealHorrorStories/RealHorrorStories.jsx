@@ -6,7 +6,7 @@ const RealHorrorStories = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const videoRef = useRef(null);
 
-  // Horror Stories Data
+  
   const horrorStories = [
     {
       id: 1,
@@ -76,13 +76,10 @@ const RealHorrorStories = () => {
       <section className="hero-section">
         <h1>Real Horror Stories 🎥</h1>
        
-        {/* <p>
-          👻 Witness spine-chilling real stories that will leave you breathless
-          and terrified.
-        </p> */}
+      
       </section>
 
-      {/* Stories List */}
+     
       <section className="stories-list">
         {horrorStories.map((story) => (
           <div key={story.id} className="story-card">
@@ -95,7 +92,7 @@ const RealHorrorStories = () => {
         ))}
       </section>
 
-      {/* Video Player Modal */}
+     
       {isModalOpen && selectedStory && (
         <div className="modal" onClick={handleCloseModal}>
           <div
