@@ -82,7 +82,7 @@ const ThrillersPage = () => {
 
   const handleSearch = (e) => setSearchTerm(e.target.value);
 
-  // Filter and sort movies
+  
   const filteredMovies = thrillerMovies
     .filter((movie) =>
       filter === 'all' ? true : movie.genre.toLowerCase().includes(filter.toLowerCase())
@@ -98,7 +98,7 @@ const ThrillersPage = () => {
         : 0
     );
 
-  // Close modal with Escape key
+  
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') setSelectedMovie(null);
